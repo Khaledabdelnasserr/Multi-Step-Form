@@ -1,7 +1,7 @@
 // Filename: ./components/ToggleSwitch.js
 
 import React, { useState } from "react";
-import "./ToggleSwitch.css";
+import "../../components/toggleswitch/toggleswitch.css";
 
 const ToggleSwitch = ({ onToggleChange }) => {
     const [isChecked, setIsChecked] = useState(false);
