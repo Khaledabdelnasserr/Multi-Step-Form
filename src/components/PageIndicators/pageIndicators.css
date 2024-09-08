@@ -1,0 +1,44 @@
+.page-indicators {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    /* Adjust spacing as needed */
+}
+
+.your-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    /* Adjust spacing as needed */
+}
+
+.h1 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 11px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.h1 h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.your-info.active .h1 {
+    background-color: #bee1ff;
+    color: black;
+}
+
+@media (max-width:429px) {
+    .page-indicators {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        height: 63px;
+    }
+}

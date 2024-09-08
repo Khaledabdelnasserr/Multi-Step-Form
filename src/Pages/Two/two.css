@@ -1,0 +1,319 @@
+.step-two-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+
+
+.right-side {}
+
+.select-plan {}
+
+.select-plan h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.select-plan p {
+    color: rgba(128, 128, 128, 0.733);
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.price-plan {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+.arcade,
+.advanced,
+.pro {}
+
+.arcade:hover,
+.advanced:hover,
+.pro:hover {
+    border: 2px solid rgb(50, 26, 188);
+    background-color: #ebeef1b0;
+    transition: none;
+    animation: none;
+}
+
+
+.arcade img {
+    padding-top: 5px;
+}
+
+.arcade h2 {
+    margin-top: 50px;
+}
+
+.arcade p {
+    margin-bottom: 3px;
+}
+
+.advanced img {
+    padding-top: 5px;
+}
+
+.advanced h2 {
+    margin-top: 50px;
+}
+
+.advanced p {
+    margin-bottom: 3px;
+}
+
+.pro img {
+    padding-top: 5px;
+}
+
+.pro h2 {
+    margin-top: 50px;
+}
+
+.pro p {
+    margin-bottom: 3px;
+}
+
+
+.selector-plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(159, 159, 161, 0.164);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.selector-plan p {
+    margin: 0;
+}
+
+.selector-plan .month {
+    color: #002153;
+    font-weight: 500;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.buttons .back-btn {
+    border: none;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.buttons .back-btn:hover {
+    color: #002153;
+    cursor: pointer;
+}
+
+.arcade.selected,
+.advanced.selected,
+.pro.selected {
+    border: 2px solid rgb(50, 26, 188);
+    background-color: #ebeef1b0;
+}
+
+.selected {
+    background-color: #002153;
+    /* Highlight color when a plan is selected */
+    color: white;
+}
+
+
+/* Highlight the selected button */
+.selected {
+    background-color: #002153;
+    color: white;
+}
+
+.arcade,
+.advanced,
+.pro {
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    padding: 15px;
+    outline: none;
+    border: 1px solid rgba(216, 211, 211, 0.783);
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.arcade img,
+.advanced img,
+.pro img {
+    margin-bottom: 10px;
+}
+
+.price-plan button.selected {
+    background-color: #002153;
+    color: white;
+}
+
+/* laptop */
+@media (max-width:1024px) {
+    .price-plan {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 500px;
+    }
+
+    .advanced,
+    .arcade,
+    .pro {
+        width: 150px;
+        margin: 0px;
+    }
+
+    .selector-plan {
+        width: 500px;
+    }
+}
+
+/* tablet */
+@media (max-width:768px) {
+    .select-plan {
+        width: 450px;
+        margin-left: 40px;
+    }
+
+    .selector-plan {
+        width: 430px;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .price-plan {
+        display: flex;
+        gap: 5px;
+    }
+
+    .advanced,
+    .arcade,
+    .pro {
+        width: 140px;
+        margin: 0px;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 15px;
+    }
+}
+
+/* mobile */
+@media (max-width:428px) {
+    .step-two-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .price-plan {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .select-plan p {
+        color: rgba(128, 128, 128, 0.733);
+        font-size: 20px;
+        margin-bottom: 40px;
+        max-width: 300px;
+        letter-spacing: 1.5px;
+    }
+
+    .select-plan {
+        width: 300px;
+        margin: 0px;
+    }
+
+    .selector-plan {
+        padding: 15px;
+        width: 300px;
+        margin-left: 0;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .select-plan h1 {
+        font-size: 35px;
+        margin-bottom: 15px;
+    }
+
+    .selector-plan .month,
+    .selector-plan .yearly {
+        margin-bottom: 0;
+    }
+
+    .arcade,
+    .advanced,
+    .pro {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 300px;
+    }
+
+    .arcade h2,
+    .advanced h2,
+    .pro h2 {
+        margin-top: 0px;
+    }
+
+    .arcade p,
+    .advanced p,
+    .pro p {
+        margin-bottom: 0px;
+    }
+
+    .right-side {
+        margin-left: -10px;
+    }
+
+    .next-step {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 100px;
+    }
+
+    .right-side .next-step button {
+        left: 0;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding: 10px;
+        background-color: rgb(3 40 91);
+        color: white;
+        font-size: medium;
+        border-radius: 10px;
+        border: none;
+        height: auto;
+        cursor: pointer;
+        width: 100px;
+    }
+}
