@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Two.css';
+import './two.css';
 import arcade from '../../assets/images/icon-arcade.svg';
 import advanced from '../../assets/images/icon-advanced.svg';
 import pro from '../../assets/images/icon-pro.svg';
